@@ -6,18 +6,17 @@
         <meta charset="UTF-8">
     </head>
 
-    <body bgcolor="gray">
-        <center>
-        <h2>Apreta la combinacio de tecles "ruben"</h2>
+    <body>
+       <div id="lletra">
+       </div>
     </body>
 
         <script type="text/javascript">;
 
-        let paraula = '';
+        let paraula = ""
         document.onkeydown=function(e){
             paraula += e.key;
-            if(paraula=="ruben")
-                window.open(url="https://www.youtube.com/watch?v=RCA3EfKUJMw")
+            document.getElementById("lletra").innerHTML = paraula
             }
 
         </script>
