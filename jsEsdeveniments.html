@@ -1,27 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC>
+<html lang="es">
     <head>
-        <meta charset="utf-8">
-        <title>JavaScript</title>
-        <script src="jsEsdeveniments.js"></script>
+        <title>HTML</title>
+        <meta charset="UTF-8">
     </head>
     <body>
-        <button id = 'click'>
-            Fes click aqui!!
+        <h1>Events</h1>
+        <button id = "click">
+            Click!
         </button>
-        <script type="text/javascript">
 
-            var button = document.getElementById('click');
+        <button id = "clickreiniciar">
+            Reiniciar
+        </button>
+
+        <script type="text/javascript">;
+
             
-            button.addEventListener('mousedown', hola);
-            button.addEventListener('mouseup', adeu);
+            var button = document.getElementById('click');
+            var contador = 0;
+
+            button.addEventListener('click', hola);
 
             function hola () {
-                document.body.style.background = 'blue';
+                contador++;
+                console.log("Has fet clic " + contador + " vegades");
             }
-            function adeu () {
-                document.body.style.background = 'yellow';
+        </script>
+
+        <script type="text/javascript">;
+    
+            var button = document.getElementById('clickreiniciar');
+            var contador = 0;
+
+            button.addEventListener('click', hola);
+
+            function hola () {
+                contador = 0;
+                console.log("Has reiniciat el comptador a " + contador);
             }
         </script>
     </body>
 </html>
+
+
