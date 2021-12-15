@@ -6,20 +6,20 @@
         <meta charset="UTF-8">
     </head>
 
-        <p id="color" style="font-size: 200px; text-align:center; color: red;"></p>
-
-        <script type="text/javascript">;
-    
-                document.onkeydown=function(letter){
-                document.getElementById('color').innerHTML = letter.key;
-            }
-
-            document.onkeyup=function(){
-                document.getElementById('color').innerHTML=' ';
-            }
-        </script>
-
+    <body bgcolor="gray">
+        <center>
+        <h2>Apreta la combinacio de tecles "ruben"</h2>
     </body>
 
+        <script type="text/javascript">;
+
+        let paraula = '';
+        document.onkeydown=function(e){
+            paraula += e.key;
+            if(paraula=="ruben")
+                window.open(url="https://www.youtube.com/watch?v=RCA3EfKUJMw")
+            }
+
+        </script>
 </html>
 
