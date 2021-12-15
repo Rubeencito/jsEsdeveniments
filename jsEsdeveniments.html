@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+        <script src="jsEsdeveniments.js"></script>
+    </head>
+    <body>
+        <button id = 'click'>
+            Fes click aqui!!
+        </button>
+        <script type="text/javascript">
+
+            var button = document.getElementById('click');
+            
+            button.addEventListener('mousedown', hola);
+            button.addEventListener('mouseup', adeu);
+
+            function hola () {
+                document.body.style.background = 'blue';
+            }
+            function adeu () {
+                document.body.style.background = 'yellow';
+            }
+        </script>
+    </body>
+</html>
