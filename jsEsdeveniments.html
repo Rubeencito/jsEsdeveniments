@@ -1,46 +1,25 @@
-<!DOCTYPE html PUBLIC>
+<!DOCTYPE html>
 <html lang="es">
+
     <head>
         <title>HTML</title>
         <meta charset="UTF-8">
     </head>
-    <body>
-        <h1>Events</h1>
-        <button id = "click">
-            Click!
-        </button>
 
-        <button id = "clickreiniciar">
-            Reiniciar
-        </button>
-
-        <script type="text/javascript">;
-
-            
-            var button = document.getElementById('click');
-            var contador = 0;
-
-            button.addEventListener('click', hola);
-
-            function hola () {
-                contador++;
-                console.log("Has fet clic " + contador + " vegades");
-            }
-        </script>
+        <p id="color" style="font-size: 200px; text-align:center; color: red;"></p>
 
         <script type="text/javascript">;
     
-            var button = document.getElementById('clickreiniciar');
-            var contador = 0;
+                document.onkeydown=function(letter){
+                document.getElementById('color').innerHTML = letter.key;
+            }
 
-            button.addEventListener('click', hola);
-
-            function hola () {
-                contador = 0;
-                console.log("Has reiniciat el comptador a " + contador);
+            document.onkeyup=function(){
+                document.getElementById('color').innerHTML=' ';
             }
         </script>
-    </body>
-</html>
 
+    </body>
+
+</html>
 
